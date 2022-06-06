@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+* {
+    box-sizing: border-box;
+    overflow: visible;
+}
+
+.page {
+    height: 100vh;
+}
+
+.all-projects {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    animation: fadeIn 1s 1.8s backwards;
+    overflow: visible;
+}
+
+.projects-container {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items:  flex-start;
+    color: rgb(228, 228, 228);
+    font-family: 'Roboto Mono';
+    margin-bottom: 6rem;
+}
+
+// base
+.flip {
+    color: #555;
+    background-color: black;
+    text-align: center;
+    font-family: 'Roboto Mono';
+    position: relative;
+    border-radius: 16px;
+    box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.7);
+
+    
+
+    
+    .border {
+        border: none;
+    }
+    h1 {
+        font-size: 3rem;
+        
+      }
+
+    h2 {
+        font-size: 2.5rem;
+        padding-bottom: 0;
+        margin-bottom: 0;
+      }
+
+    .front,
+    .back {
+        display: block;
+        transition-duration: .5s;
+        transition-property: transform, opacity;
+    }
+    .front {
+        transform: rotateX(0deg);
+        display: flex;
+        
+     
+        
+        
+    }
+    .back {
+        position: absolute;
+        opacity: 0;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        transform: rotateX(-180deg);
+    }
+
+
+    
+    &:hover {
+
+
+
+        .front {
+         
+           
+            transform: rotateX(180deg);
+            
+            opacity: 0;
+        }
+        .back {
+            opacity: 1;
+            transform: rotateX(0deg);
+        }
+    }
+}
+
+
+.react-projects {
+
+.one {
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,1) ), url('/assets/images/react-travel-site.PNG'); 
+        
+}
+.two {
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1) ), url('/assets/images/react-feedback-app.PNG'); 
+        
+}
+.three {
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1)), url('/assets/images/todolist.PNG'); 
+        
+}
+
+}
+.javascript-projects {
+
+.one {
+    background-image: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,1) ), url('/assets/images/restaurant-site.PNG'); 
+        
+}
+.two {
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1) ), url('/assets/images/memory-game-3.PNG'); 
+        
+}
+.three {
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1)), url('/assets/images/videogame-netflix-2.PNG'); 
+        
+}
+
+}
+
+
+// custom
+.flip {
+    position: relative;
+    display: inline-block;
+    margin: 1rem 4em;
+    margin-left: 0;
+    width: 450px;
+    
+
+    .front,
+    .back {
+      display: flex;
+      flex-direction: column;
+      color: white;
+      width: inherit;
+      background-size: cover!important;
+      background-position: center!important;
+      height: 250px;
+      padding: 1em 2em;
+      border-radius: 10px;
+      p {
+        font-size: 1.5rem;
+        line-height: 160%;
+        color: #999;
+      }
+    }
+
+    .front {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .back {
+        background: #313131;
+    }
+}
+
+.text-shadow {
+  text-shadow: 1px 1px rgba(0, 0, 0, 1);
+  
+}
+
+
+
+.flat-button {
+    color: #ffd700;
+    font-size: 13px;
+    font-weight: 400;
+    letter-spacing: 4px;
+    font-family: sans-serif;
+    text-decoration: none;
+    padding: 10px 18px;
+    border: 1px solid #ffd700;
+    display: inline-block;
+    width: fit-content;
+    animation: fadeInAnimation 1s 1.8s backwards;
+    white-space: nowrap;
+
+    &:hover {
+      background: #ffd700;
+      color: #333;
+    }
+  }
+
+
+
+  @media (min-width: 2400px) {
+    .flip h1 {
+        font-size: 5rem;
+    }
+
+      #react-title, #javascript-title {
+          font-size: 5rem;
+      }
+    .flip {
+        width: 700px;
+        height: 400px;
+
+        .front, .back {
+            height: 100%;
+            
+            h2 {
+                font-size: 4.5rem;
+            }
+
+            p {
+                font-size: 2.7rem;
+            }
+
+            a {
+                font-size: 3rem;
+            }
+        }
+    }
+
+  }
+
+  @media (max-width: 2600px) {
+
+    .all-projects {
+        margin-top: 5%;
+    }
+  }
+@media (max-width: 1500px) {
+    .flip h1 {
+        font-size: 2.83rem;
+    }
+    .flip h2 {
+        font-size: 1.8rem;
+    }
+    .flip .front p, .flip .back p {
+        margin: 0;
+        margin-bottom: 0.4rem;
+    }
+    
+    .flip {
+        width: 350px;
+    }
+
+    .flip .front, .flip .back {
+        height: 200px;
+    }
+
+    .home-page .flat-button {
+        margin-top: 0.5rem;
+    }
+}
+@media (max-width: 1320px) {
+    
+    .all-projects {
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-left: 3%;
+        margin-top: 5%;
+    }
+
+   
+    .javascript-projects, .react-projects {
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        flex-direction: column;
+        
+    }
+    .flip h2 {
+        font-size: 1.5rem;
+    }
+    .flip .front p, .flip .back p {
+        margin: 0;
+        margin-bottom: 0.4rem;
+        font-size: 1.2rem;
+    }
+
+    .flat-button {
+        padding: 0.4rem 2rem;
+    }
+    
+
+}
+
+@media (max-width: 1260px) {
+
+.flip {
+        width: 300px;
+    }
+
+    .flip .front, .flip .back {
+        height: 150px;
+    }
+}
+
+
+@media (max-width: 1260px) {
+   
+    .react-projects {
+        margin-top: 0;
+    }
+    .javascript-projects , .react-projects {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #react-title, #javascript-title{
+        text-align: center;
+        width: 300px;
+        font-size: 3rem;
+        color: #ffd700;
+      }
+    
+}
+
+@media (max-width: 1008px) {
+
+    .all-projects {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+       
+    }
+
+    
+   
+}
+
+@media (max-width: 700px) {
+    .all-projects {
+        flex-direction: column;
+        margin-left: 0;
+    }
+
+    .all-projects {
+        margin-top: 50%;
+    }
+
+    .projects-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .react-projects, .javascript-projects {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .flip {
+        margin: 1rem 0;
+    }
+
+}
+
+
+@media (max-width: 500px) {
+
+    .all-projects {
+        margin-top: 70%;
+    }
+
+}
+
+
+@media (max-width: 400px) {
+    .all-projects {
+        margin-top: 80%;
+    }
+
+
+}
+
+
+
+
+
+
+@media (max-width: 1100px) and (max-height: 800px) {
+    .all-projects {
+        margin-top: 10%;
+    }
+
+    .flip .back h2  {
+        font-size: 1.5rem;
+
+        
+    }
+
+    .flip .front p, .flip .back p {
+        font-size: 1rem;
+    }
+
+    .flat-button {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+        padding: 0.5rem;
+    }
+
+}
+
+@media (max-width: 700px) and (max-height: 800px) {
+    .all-projects {
+        margin-top: 50%;
+    }
+
+
+}
+
+@media (max-width: 600px) and (max-height: 800px) {
+    .all-projects {
+        margin-top: 80%;
+    }
+
+    
+    .flip .back h2  {
+        font-size: 1.5rem;
+
+        
+    }
+
+    .flip .front p, .flip .back p {
+        font-size: 1rem;
+    }
+
+    .flat-button {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+        padding: 0.5rem;
+    }
+
+}
+
+@media (max-width: 800px) and (max-height: 400px){
+    .all-projects {
+        margin-top: 20%;
+    }
+
+
+  }
+
+@media (max-width: 500px) and (max-height: 700px) {
+    .all-projects {
+        margin-top: 100%;
+    }
+}
+
+@media (max-width: 400px) and (max-height: 2000px) {
+    .page {
+        height: fit-content;
+    }
+    .all-projects {
+        margin-top: 0%;
+    }
+    .flip {
+        width: 250px;
+    }
+
+    .flip .back h2  {
+        font-size: 1.5rem;
+
+        
+    }
+
+    .flip .front p, .flip .back p {
+        font-size: 1rem;
+    }
+
+    .flat-button {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+        padding: 0.5rem;
+    }
+    
+
+}
+
+
+
+@media (max-width: 400px) and (max-height: 900px) {
+    .all-projects {
+        margin-top: 100%;
+    }
+
+
+}
+@media (max-width: 320px) and (max-height: 800px) {
+    .all-projects {
+        margin-top: 150%;
+    }
+    .flip {
+        width: 250px;
+    }
+
+}
+
+

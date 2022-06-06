@@ -1,0 +1,399 @@
+
+
+.page {
+    width: 100%;
+    // height: 100%;
+    // position: absolute;
+    // top: 0;
+    overflow: visible;
+    
+  }
+  
+ 
+  .container {
+    width: 100%;
+    will-change: contents;
+    height: 90%;
+    min-height: 566px;
+    position: absolute;
+    opacity: 0;
+    top: 5%;
+    margin: 0 auto;
+    z-index: 1;
+    transform-style: preserve-3d;
+    animation: fadeIn 1s forwards;
+    animation-delay: 1s;
+    
+
+
+  }
+  
+
+    #text-zone {
+     
+      margin-left: 10%;
+      width: 35%;
+      vertical-align: middle;
+      display: table-cell;
+      max-height: 90%;
+  
+      h1 {
+        font-size: 53px;
+        font-family: 'Coolvetica';
+        color: #ffd700;
+        font-weight: 400;
+        margin-top: 0;
+        position: relative;
+        margin-bottom: 40px;
+        left: -10px;
+  
+    
+      }
+  
+      p {
+        font-size: 13px;
+        color: #fff;
+        font-family: sans-serif;
+        font-weight: 300;
+        max-width: fit-content;
+        animation: pulse 1s;
+        &:nth-of-type(1) {
+          animation-delay: 1.1s;
+        }
+        &:nth-of-type(2) {
+          animation-delay: 1.2s;
+        }
+        &:nth-of-type(3) {
+          animation-delay: 1.3s;
+        }
+      }
+    }
+  
+    .text-animate-hover {
+      &:hover {
+        color: #fff;
+      }
+    }
+  
+
+
+  
+
+
+  @media (min-width:2000px) {
+    #text-zone {
+      margin-left: 10%;
+      width: 45%;
+
+      h1 {
+        font-size: 10rem;
+      }
+
+      p {
+        font-size: 3rem;
+      }
+    }
+  }
+  @media (max-width:1999px) {
+    #text-zone {
+      
+
+      h1 {
+        font-size: 8rem;
+      }
+
+      p {
+        font-size: 2.3rem;
+      }
+    }
+
+  }
+  @media (max-width:1500px) {
+    #contact-button {
+        font-size: 3rem;
+    }
+
+    #text-zone {
+      
+
+      h1 {
+        font-size: 6rem;
+      }
+
+      p {
+        font-size: 1.5rem;
+      }
+    }
+
+  }
+  @media (max-width:1380px) {
+    #project-two {
+      display: none;
+    }
+
+  }
+  @media (max-width:1300px) {
+    #contact-button {
+        font-size: 3rem;
+    }
+
+  }
+  @media (max-width:1000px) {
+    #contact-button {
+        font-size: 2rem;
+    }
+
+  }
+  @media (max-width:1008px) {
+    html, body {
+      overflow: visible;
+    }
+    .container {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+   
+    .home-page .text-zone {
+      position: static;
+      width: 90%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center ;
+    }
+
+    #text-zone {
+      width: 80%;
+    }
+
+    .nav-bar {
+      display: none;
+    }
+
+    .projects-section .projects_container .projects-container-react .react-projects .flip-card {
+      margin: 2rem 0;
+    }
+
+    .projects-section .projects_container .projects-container-react .react-projects .flip-card {
+      width: 100%;
+    }
+    
+}
+
+
+@media (max-width: 1300px) {
+  #project-two {
+    display: none;
+
+  }
+
+}
+
+@media (max-width: 950px) {
+  .home-page .text-zone {
+    margin-top: 50%;
+  }
+
+  .projects-section {
+    width: 60vw;
+  }
+
+  .projects-section .projects_container .projects-container-react .react-projects .flip-card .front, .projects-section .projects_container .projects-container-react .react-projects .flip-card .back {
+    height: 400px;
+  }
+
+  .projects-section .projects_container .projects-container-react .react-projects .flip-card {
+    width: 100%;
+  }
+
+  #project-link {
+    font-size: 2rem;
+    padding: 0.4rem 2rem;
+    margin: 0;
+    
+  }
+
+  #projects-button {
+    font-size: 4rem;
+    width: 100%;
+  }
+
+  .projects-section .projects_container .projects-container-react .react-projects .flip-card h1 {
+    font-size: 5rem;
+  }
+  .projects-section .projects_container .projects-container-react .react-projects .flip-card h2 {
+    font-size: 4rem;
+  }
+  .projects-section .projects_container .projects-container-react .react-projects .flip-card .front p, .projects-section .projects_container .projects-container-react .react-projects .flip-card .back p {
+    font-size: 2.5rem;
+  }
+}
+
+
+
+@media (max-width: 900px) {
+  .home-page h1 {
+    font-size: 8rem;
+  }
+  .projects-section .projects_container .projects-container-react .react-projects .flip-card .front, .projects-section .projects_container .projects-container-react .react-projects .flip-card .back {
+    height: 330px;
+  }
+
+  .home-page .flat-button {
+    font-size: 2.5rem;
+    margin: 0;
+    
+  }
+
+  #projects-button {
+    font-size: 3rem;
+  }
+
+  #contact-button {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .home-page h1 {
+    font-size: 8rem;
+  }
+  .home-page .flat-button {
+    font-size: 3rem
+  }
+
+  #projects-button {
+    font-size: 3rem;
+  }
+
+  .projects-section .projects_container .projects-container-react .react-projects .flip-card h1 {
+    font-size: 4rem;
+  }
+  .projects-section .projects_container .projects-container-react .react-projects .flip-card h2 {
+    font-size: 3rem;
+  }
+  .projects-section .projects_container .projects-container-react .react-projects .flip-card .front p, .projects-section .projects_container .projects-container-react .react-projects .flip-card .back p {
+    font-size: 2rem;
+  }
+  .projects-section .projects_container .projects-container-react .react-projects .flip-card .front, .projects-section .projects_container .projects-container-react .react-projects .flip-card .back {
+    height: 300px;
+  }
+}
+
+
+@media (max-width: 600px) {
+
+    #project-link {
+      font-size: 1.5rem;
+  }
+    #project-text {
+      font-size: 1.3rem;
+  }
+}
+
+
+@media (max-width: 500px) {
+  .projects-section {
+    margin-top: 2rem;
+    justify-content: start;
+    height: fit-content;
+  }
+  .home-page h1 {
+    font-size: 6rem;
+  }
+  .home-page .flat-button {
+    font-size: 1.5rem
+  }
+
+  #projects-button {
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  .projects-section .projects_container .projects-container-react .react-projects .flip-card h1 {
+    font-size: 3rem;
+  }
+  .projects-section .projects_container .projects-container-react .react-projects .flip-card h2 {
+    font-size: 2rem;
+  }
+  .projects-section .projects_container .projects-container-react .react-projects .flip-card .front p, .projects-section .projects_container .projects-container-react .react-projects .flip-card .back p {
+    font-size: 1.5rem;
+  }
+  .projects-section .projects_container .projects-container-react .react-projects .flip-card .front, .projects-section .projects_container .projects-container-react .react-projects .flip-card .back {
+    height: 300px;
+  }
+
+  .home-page h1 {
+    font-size: 4rem;
+  }
+
+  #contact-button {
+    font-size: 1.5rem;
+  }
+
+  #tsparticles {
+    position: absolute;
+    z-index: -100;
+  }
+
+  .home-page .text-zone {
+    margin-top: 0;
+  }
+
+
+ #backOne, #backTwo, #project-one-home, #project-two-home {
+   height: 200px;
+   
+ }
+
+ #project-title {
+   margin: 0;
+ }
+ #project-text {
+   margin: 0;
+ }
+ 
+}
+
+
+@media (max-width: 400px) {
+  #project-title {
+    font-size: 1.5rem;
+    margin-top: 0;
+  }
+
+  #project-text {
+    font-size: 1.2rem;
+    padding: 0rem;
+    margin: 0;
+  }
+
+  #project-link {
+    font-size: 1.5rem;
+    padding: 0.5rem 2rem;
+    margin-top: 1rem;
+  }
+}
+@media (max-width: 300px) {
+  #main-project-title-one, #main-project-title-two {
+    font-size: 2rem;
+  }
+  #project-title {
+    font-size: 1.3rem;
+    margin-top: 0;
+  }
+
+  #project-text {
+    font-size: 1rem;
+    padding: 0rem;
+    margin: 0;
+  }
+
+  #project-link {
+    font-size: 1.2rem;
+    padding: 0.5rem 2rem;
+    margin-top: 1rem;
+  }
+}
