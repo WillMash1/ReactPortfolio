@@ -1,12 +1,8 @@
 import { useEffect, useState } from 'react'
 import Loader from 'react-loaders'
 import { Link } from 'react-router-dom'
-import LogoTitle from '../../assets/images/logo-s.png'
 import AnimatedLetter from '../AnimatedLetters'
-import Layout from '../Layout'
-import Sidebar from '../Sidebar'
 import './index.scss'
-import Logo from './Logo'
 import Projects from './Projects'
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";

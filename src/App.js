@@ -2,8 +2,6 @@ import './App.scss';
 import {Routes, Route} from 'react-router-dom';
 import Layout from './component/Layout'; 
 import Home from './component/Home';
-import Projects from './component/Home/Projects';
-import Logo from './component/Home/Logo';
 import About from './component/About';
 import Contact from './component/Contact';
 import Work from './component/Work';
