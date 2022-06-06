@@ -1,8 +1,7 @@
 import { Outlet } from 'react-router-dom';
 import Sidebar from '../Sidebar';
-import Home from '../Home';
 import './index.scss';
-import Loader from 'react-loaders';
+
 
 
 const Layout = () => {
